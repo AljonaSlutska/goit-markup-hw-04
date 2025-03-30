@@ -56,6 +56,7 @@ li:hover .overlay {
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -102,9 +103,9 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 position: relative;
 transition: 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .adress {
@@ -126,9 +127,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 transition: 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .nav-link:hover,
@@ -161,6 +162,7 @@ url(../images/people-office.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .container {
@@ -206,6 +208,8 @@ box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: #404bbf;
 }
 
+/* -----------------FEATURES--------------- */
+
 .features {
 padding: 120px 0;
 position:relative;
@@ -225,6 +229,7 @@ position: relative;
 border-radius: 0 0 4px 4px;
 padding: 32px 0;
 display: flex;
+height: 112px;
 align-items: center;
 justify-content: center;
 flex-direction: column;
@@ -286,7 +291,6 @@ background-color: #FFFFFF;
 border-radius: 0 0 4px 4px;
 width: 264px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff;
 flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -297,6 +301,7 @@ flex-basis: calc((100% - 72px) / 4);
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .team-subtitle {
@@ -337,7 +342,8 @@ color: #434455;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
-.social-links-team .link:hover {
+.social-links-team .link:hover,
+.social-links-team .link:focus {
 background-color: #404bbf;
 } 
 
@@ -364,6 +370,7 @@ margin-bottom: 72px;
 display: flex;
 flex-wrap: wrap;
 gap: 48px 24px;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
@@ -466,14 +473,14 @@ max-width: 264px;
 }
 
 .social-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 208px;
-    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+max-width: 208px;
+box-sizing: border-box;
 }
 
-.social-subtitle {
+.social-footer-text {
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -499,10 +506,7 @@ margin-bottom: 16px;
     fill: #fff;
     background-color: #4d5ae5;
     position: relative;
-    transition: 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 .social-footer-links .link:hover,
