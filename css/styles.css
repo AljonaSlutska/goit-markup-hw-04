@@ -442,7 +442,10 @@ padding-bottom: 100px;
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+}
+
+.footer-content {
+    margin-right: 120px;
 }
 
 .footer-logo {
