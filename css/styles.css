@@ -56,6 +56,7 @@ li:hover .overlay {
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+color: #404bbf;
 box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -102,10 +103,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
 position: relative;
-transition: 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+bottom: -1px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress {
@@ -126,10 +125,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-transition: 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -151,6 +147,7 @@ bottom: 0;
 background-color: #404bbf;
 }
 
+/* -------------------HERO-------------- */
 
 .hero {
 background-color: #2e2f42;
@@ -197,10 +194,7 @@ border-radius: 4px;
 padding: 16px 32px;
 border: none;
 margin: 0;
-transition: 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -245,6 +239,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 100%;
+margin-bottom: 8px;
 }
 
 .features-subtitle {
@@ -322,6 +317,10 @@ text-align: center;
 color: #434455;
 }
 
+.icon-social {
+    fill: #f4f4fd;
+}
+
 .social-links-team {
     display: flex;
     align-items: center;
@@ -339,7 +338,7 @@ color: #434455;
     fill: #fff;
     background-color: #4d5ae5;
     position: relative;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-team .link:hover,
@@ -377,6 +376,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 flex-basis: calc((100% - 48px) / 3);
 border-radius: 0 0 4px 4px;
 position: relative;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
